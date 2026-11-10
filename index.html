@@ -17,7 +17,7 @@
       <a class="hero-link" href="#idea" aria-label="VIEW MY WORKS: 작품 소개 보기"><span class="sr-only">VIEW MY WORKS</span></a>
     </section>
     <section id="idea" class="design-section" aria-label="01 THE IDEA"><img loading="lazy" src="./assets/idea.png" alt="01 THE IDEA — 작은 상상에서 하나의 세계로. 내가 만든 캐릭터와 다양한 창작물을 하나의 공간에 담아보았습니다." /></section>
-    <section id="moodboard" class="design-section" aria-label="02 VISUAL MOOD"><img loading="lazy" src="./assets/moodboard.png" alt="02 VISUAL MOOD — 캐릭터의 개성과 창작 공간의 분위기를 담은 비주얼 무드보드" /></section>
+    <section id="moodboard" class="design-section mood-section" aria-label="02 VISUAL MOOD"><img loading="lazy" src="./assets/moodboard.png" alt="02 VISUAL MOOD — 캐릭터의 개성과 창작 공간의 분위기를 담은 비주얼 무드보드" /><button type="button" class="mood-hotspot" style="left:0.5%;top:44.5%;width:14.3%;height:24.2%" data-mood="0" aria-label="마법 구체 확대해서 보기" title="마법 구체 확대"></button><button type="button" class="mood-hotspot" style="left:0.5%;top:70.4%;width:14.3%;height:25%" data-mood="1" aria-label="붉은 마법진 확대해서 보기" title="붉은 마법진 확대"></button><button type="button" class="mood-hotspot" style="left:17.2%;top:44.5%;width:20.4%;height:51.0%" data-mood="2" aria-label="붉은 달의 마왕성 확대해서 보기" title="붉은 달의 마왕성 확대"></button><button type="button" class="mood-hotspot" style="left:38.0%;top:44.5%;width:17.0%;height:51%" data-mood="3" aria-label="붉은 에너지 구체 확대해서 보기" title="붉은 에너지 구체 확대"></button><button type="button" class="mood-hotspot" style="left:55.4%;top:44.5%;width:17.0%;height:51%" data-mood="4" aria-label="금속 질감 확대해서 보기" title="금속 질감 확대"></button><button type="button" class="mood-hotspot" style="left:73.0%;top:44.5%;width:20.5%;height:51%" data-mood="5" aria-label="붉은 달과 성 확대해서 보기" title="붉은 달과 성 확대"></button></section>
     <section id="concept" class="design-section" aria-label="03 VISUAL CONCEPT"><img loading="lazy" src="./assets/concept.png" alt="03 VISUAL CONCEPT — DARK FANTASY MEETS CUTE CHARACTER" /></section>
     <section class="video-section" aria-label="03 페이지 작품 영상">
       <div class="video-wrap">
@@ -33,5 +33,11 @@
     <section id="typography" class="design-section" aria-label="06 FONT SYSTEM"><img loading="lazy" src="./assets/typography.png" alt="06 FONT SYSTEM — Inter, 프리텐다드, 타이포그래피 스케일" /></section>
   </main>
   <a class="back-top" href="#top" aria-label="맨 위로 돌아가기" title="맨 위로"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5v10H14v-6h-4v6H3z" fill="currentColor"/></svg></a>
+  <div class="mood-lightbox" id="mood-lightbox" role="dialog" aria-modal="true" aria-label="무드보드 이미지 확대" aria-hidden="true" hidden>
+    <button class="mood-close" type="button" aria-label="확대 화면 닫기">×</button>
+    <button class="mood-prev" type="button" aria-label="이전 이미지">‹</button>
+    <figure class="mood-figure"><img class="mood-large" alt=""><figcaption class="mood-count" aria-live="polite"></figcaption></figure>
+    <button class="mood-next" type="button" aria-label="다음 이미지">›</button>
+  </div>
 </body>
 </html>

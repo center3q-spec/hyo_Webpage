@@ -1,3 +1,21 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#F4F3EF;color:#1A0F11;font-family:Arial,sans-serif}main{width:100%}.hero,.design-section{position:relative;width:100%;max-width:1649px;margin:0 auto}.hero>img,.design-section>img{display:block;width:100%;height:auto}.hero-link{position:absolute;left:0.4%;top:78.7%;width:31.7%;height:15%;border-radius:24px;cursor:pointer;transition:filter .2s,transform .2s}.hero-link:hover{background:rgba(255,122,0,.09);transform:translateY(-2px)}.hero-link:focus-visible,.back-top:focus-visible{outline:4px solid #FF7A00;outline-offset:3px}.design-section{scroll-margin-top:0}.back-top{position:fixed;right:clamp(14px,3vw,40px);bottom:clamp(14px,3vw,36px);width:56px;height:56px;border-radius:14px;background:#FF4D00;color:#fff;display:grid;place-items:center;text-decoration:none;box-shadow:0 5px 18px #0002;transition:opacity .2s,transform .2s;opacity:0;pointer-events:none}.back-top.visible{opacity:1;pointer-events:auto}.back-top:hover{transform:translateY(-4px)}.back-top svg{width:32px;height:32px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@media(max-width:650px){.hero-link{border-radius:8px}.back-top{width:44px;height:44px;border-radius:10px}.back-top svg{width:27px;height:27px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
 
 .video-section{max-width:1649px;margin:0 auto;padding:32px clamp(18px,5vw,88px) 65px;background:#1A0F11;color:#F4F3EF}.video-wrap{max-width:1120px;margin:0 auto}.video-label{font-size:13px;letter-spacing:.18em;font-weight:700;margin:0 0 18px;color:#FF7A00}.video-section video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#080608;border:1px solid #3B3B3B;border-radius:8px;object-fit:contain}
+
+/* 무드보드 원본 디자인은 그대로 두고 클릭 영역만 덧씌웁니다. */
+.mood-hotspot{position:absolute;display:block;border:0;background:transparent;cursor:zoom-in;padding:0;border-radius:3px}
+.mood-hotspot:hover{outline:none}
+.mood-hotspot:focus-visible{outline:4px solid #ff7a00;outline-offset:2px}
+.mood-lightbox[hidden]{display:none!important}
+.mood-lightbox{position:fixed;inset:0;z-index:9999;background:rgba(9,7,10,.94);display:flex;align-items:center;justify-content:center;color:#fff;padding:60px 65px 48px}
+.mood-figure{margin:0;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;max-width:100%;max-height:100%}
+.mood-large{display:block;width:auto;height:auto;max-width:min(84vw,1050px);max-height:calc(100dvh - 125px);min-height:min(65vh,620px);object-fit:contain;box-shadow:0 10px 40px #0008}
+.mood-count{font:600 14px Arial,sans-serif;color:#ddd;letter-spacing:.05em}
+.mood-close,.mood-prev,.mood-next{border:0;background:rgba(255,255,255,.13);color:#fff;cursor:pointer;display:grid;place-items:center}
+.mood-close{position:absolute;right:22px;top:18px;width:48px;height:48px;border-radius:50%;font-size:34px}
+.mood-prev,.mood-next{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:60px;border-radius:12px;font-size:52px;line-height:1}
+.mood-prev{left:12px}.mood-next{right:12px}
+.mood-close:hover,.mood-prev:hover,.mood-next:hover{background:#ff4d00}
+.mood-close:focus-visible,.mood-prev:focus-visible,.mood-next:focus-visible{outline:3px solid #ff7a00;outline-offset:3px}
+body.mood-open{overflow:hidden}
+@media(max-width:600px){.mood-lightbox{padding:68px 42px 42px}.mood-prev,.mood-next{width:36px;height:52px;font-size:40px}.mood-prev{left:3px}.mood-next{right:3px}.mood-close{right:12px;top:12px}.mood-large{min-height:0;max-width:calc(100vw - 90px);max-height:calc(100dvh - 150px)}}
